@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 
 import sys
 import re
@@ -32,7 +32,7 @@ lines = re.split(b"\r\n|\n", content)
 
 def line_isprint(line):
     for c in line:
-        if not 31 < ord(c) < 127:
+        if not 31 < c < 127:
             return False
     return True
 
